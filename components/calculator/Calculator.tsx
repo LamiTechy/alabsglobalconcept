@@ -370,7 +370,7 @@ export function Calculator() {
                 {formatNaira(priceRange.low)} – {formatNaira(priceRange.high)}
               </p>
               <p className="mt-1.5 text-xs text-muted">
-                Ballpark only [CONFIRM_PRICING_LOGIC] — final pricing follows a site survey and brand selection.
+                Ballpark only — final pricing follows a site survey and brand selection.
               </p>
             </div>
           )}

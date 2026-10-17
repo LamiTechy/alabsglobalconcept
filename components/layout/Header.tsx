@@ -6,7 +6,7 @@ import { useEffect, useState } from "react";
 import { Menu, X, Phone, ChevronDown } from "lucide-react";
 import { Logo } from "./Logo";
 import { ButtonLink } from "@/components/ui/Button";
-import { siteConfig, whatsappLink, DEFAULT_WHATSAPP_MESSAGE } from "@/lib/site";
+import { siteConfig } from "@/lib/site";
 import { cn } from "@/lib/utils";
 
 const serviceLinks = [
@@ -147,15 +147,6 @@ export function Header() {
             <div className="mt-3 flex flex-col gap-2">
               <ButtonLink href="/contact" variant="primary" size="lg">
                 Get a Free Quote
-              </ButtonLink>
-              <ButtonLink
-                href={whatsappLink(DEFAULT_WHATSAPP_MESSAGE)}
-                variant="whatsapp"
-                size="lg"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                Chat on WhatsApp
               </ButtonLink>
             </div>
           </nav>

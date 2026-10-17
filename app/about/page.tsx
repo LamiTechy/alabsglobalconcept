@@ -68,10 +68,16 @@ export default function AboutPage() {
                 vaccines warm in a clinic fridge. We started {siteConfig.name} to change that equation.
               </p>
               <p>
-                From our base in Abuja (FCT), we design, supply and install solar power systems for
-                residential homes, commercial offices, clinics, schools, estates, farms and places of
-                worship — plus CCTV camera supply and installation — with nationwide equipment
-                delivery for clients beyond the FCT.
+                From our base in Mararaba (Karu LGA, Nasarawa State), we design, supply and install
+                solar power systems for residential homes, commercial offices, clinics, schools,
+                estates, farms and places of worship — plus CCTV camera supply and installation —
+                with nationwide equipment delivery for clients beyond the FCT.
+              </p>
+              <p>
+                Power was the first problem we solved — security was the next. The same homes, shops
+                and offices we keep powered also need watching over, so we supply and install CCTV
+                camera systems side by side with our solar work: phone viewing, clean cabling and
+                support you can reach after the job is done.
               </p>
               <p>
                 <strong className="text-deep-900">Our promise is simple:</strong> honest advice, genuine
@@ -137,7 +143,7 @@ export default function AboutPage() {
         <div className="container-page">
           <SectionHeading
             eyebrow="Our team"
-            title="The people behind the panels"
+            title="The people behind the panels & cameras"
             description="Certified installers, engineers and support staff who treat your property like their own. [CONFIRM team names & roles before launch]"
           />
           <div className="mt-12 grid gap-6 sm:grid-cols-2 lg:grid-cols-4">
@@ -169,7 +175,7 @@ export default function AboutPage() {
               align="left"
               eyebrow="Service coverage"
               title="Proudly serving Abuja — and shipping nationwide"
-              description="We install across Abuja and its satellite towns, and supply equipment to clients throughout Nigeria."
+              description="We install solar and CCTV systems across Abuja and its satellite towns, and supply equipment to clients throughout Nigeria."
             />
             <ul className="mt-8 flex flex-wrap gap-2.5">
               {siteConfig.areasServed.map((area) => (

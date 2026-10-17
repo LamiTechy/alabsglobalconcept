@@ -13,6 +13,8 @@ const envSchema = z.object({
   BREVO_API_FROM: z.string().optional(),
   ADMIN_EMAIL_ALERTS: z.string().email().optional(),
   NEXT_PUBLIC_SITE_URL: z.string().url().optional(),
+  GROQ_API_KEY: z.string().optional(),
+  GROQ_MODEL: z.string().optional(),
   RATE_LIMIT_MAX: z.coerce.number().int().positive().default(10),
   RATE_LIMIT_WINDOW_MS: z.coerce.number().int().positive().default(60000),
 });

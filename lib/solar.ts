@@ -180,7 +180,7 @@ export function sizeSystem(
     batteryUsableKwh: +usableKwhNeeded.toFixed(2),
     batteryBankAh,
     batteryUnits,
-    batteryUnitSpec: `${recommendedSystemVoltage}V lithium modules ≈ ${lithiumUnitKwh}kWh each [CONFIRM brand]`,
+    batteryUnitSpec: `${recommendedSystemVoltage}V lithium modules ≈ ${lithiumUnitKwh}kWh each`,
     panelWattageNeeded: Math.round(panelWattageNeeded),
     panelCount,
     panelUnitW: PANEL_UNIT_W,

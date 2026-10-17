@@ -36,6 +36,9 @@ export const IMAGES = {
     streetLight: unsplash("photo-1473341304170-971dccb5ac1e", 800),
     mppt: pexels(1108572, 800),
     accessories: pexels(433308, 800),
+    cctvBullet: pexels(3205735, 800),
+    cctvDome: pexels(29148355, 800),
+    cctvKit: unsplash("photo-1557597774-9d273605dfa9", 800),
   },
   projects: {
     gwarinpa: unsplash("photo-1497440001374-f26997328c1b", 1000),

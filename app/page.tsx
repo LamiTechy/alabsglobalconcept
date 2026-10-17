@@ -238,7 +238,7 @@ export default async function HomePage() {
                 {
                   icon: Sparkles,
                   title: "Flexible payment options",
-                  text: "Staged payments and instalment plans [CONFIRM] so cash flow doesn't block your upgrade.",
+                  text: "Staged payments and instalment plans so cash flow doesn't block your upgrade.",
                 },
               ].map(({ icon: Icon, title, text }, i) => (
                 <Reveal key={title} delay={i * 0.05} className="flex gap-4">
@@ -268,7 +268,7 @@ export default async function HomePage() {
                 </div>
                 <div className="rounded-2xl border border-white/10 bg-white/5 p-5">
                   <p className="font-display text-2xl font-bold text-energy-400">25 yrs</p>
-                  <p className="mt-1 text-xs text-white/60">Panel performance warranty [CONFIRM]</p>
+                  <p className="mt-1 text-xs text-white/60">Panel performance warranty</p>
                 </div>
               </div>
             </div>

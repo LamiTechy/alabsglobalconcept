@@ -99,6 +99,14 @@ export default async function ContactPage() {
                     <a href={`tel:${siteConfig.phone.replace(/\s/g, "")}`} className="text-muted hover:text-sun-600">
                       {siteConfig.phone}
                     </a>
+                    {siteConfig.phone2 && (
+                      <>
+                        {" · "}
+                        <a href={`tel:${siteConfig.phone2.replace(/\s/g, "")}`} className="text-muted hover:text-sun-600">
+                          {siteConfig.phone2}
+                        </a>
+                      </>
+                    )}
                   </div>
                 </li>
                 <li className="flex gap-3">
@@ -153,7 +161,7 @@ export default async function ContactPage() {
             <div className="card overflow-hidden">
               <div className="p-5">
                 <h2 className="font-display text-base font-bold text-deep-900">Find our office</h2>
-                <p className="mt-1 text-xs text-muted">Abuja, FCT — [CONFIRM exact map pin]</p>
+                <p className="mt-1 text-xs text-muted">Mararaba, Karu LGA — Nasarawa State</p>
               </div>
               <div className="relative h-64 w-full bg-deep-100">
                 <iframe
@@ -188,6 +196,28 @@ export default async function ContactPage() {
           <div className="mt-10">
             <FAQAccordion items={faqs.map((f) => ({ question: f.question, answer: f.answer }))} />
           </div>
+        </div>
+      </section>
+
+      <section className="bg-deep-950 py-14 text-white">
+        <div className="container-page flex flex-col items-center gap-7 text-center lg:flex-row lg:justify-between lg:text-left">
+          <div>
+            <h2 className="font-display text-display-sm font-bold">Prefer WhatsApp?</h2>
+            <p className="mt-2 max-w-xl text-white/70">
+              Connect with us directly — send your solar or CCTV requirement and we&apos;ll respond
+              with honest next steps, usually the same day.
+            </p>
+          </div>
+          <ButtonLink
+            href={whatsappLink(DEFAULT_WHATSAPP_MESSAGE)}
+            variant="whatsapp"
+            size="lg"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <MessageCircle className="h-4.5 w-4.5" aria-hidden />
+            Connect on WhatsApp
+          </ButtonLink>
         </div>
       </section>
     </>

@@ -5,7 +5,8 @@ import { siteConfig, buildAbsoluteUrl } from "@/lib/site";
 import { Header } from "@/components/layout/Header";
 import { Footer } from "@/components/layout/Footer";
 import { AnnouncementBar } from "@/components/layout/AnnouncementBar";
-import { WhatsAppFloat, MobileBottomBar } from "@/components/layout/FloatingActions";
+import { AIChatWidget } from "@/components/layout/AIChatWidget";
+import { MobileBottomBar } from "@/components/layout/FloatingActions";
 import { CookieNotice } from "@/components/layout/CookieNotice";
 import { getSiteSettings } from "@/lib/queries";
 import "./globals.css";
@@ -97,7 +98,7 @@ export default async function RootLayout({
           {children}
         </main>
         <Footer />
-        <WhatsAppFloat />
+        <AIChatWidget />
         <MobileBottomBar />
         <CookieNotice />
         <Analytics />

@@ -3,12 +3,13 @@ export const siteConfig = {
   tagline: "Solar Installation & Supply in Abuja",
   description:
     "Alabsglobalconcept designs, supplies and installs dependable solar power systems and CCTV camera systems for homes, businesses and institutions across Abuja, FCT and Nigeria.",
-  phone: process.env.NEXT_PUBLIC_PHONE || "+234XXXXXXXXXX",
-  whatsapp: process.env.NEXT_PUBLIC_WHATSAPP || "234XXXXXXXXXX",
+  phone: process.env.NEXT_PUBLIC_PHONE || "08163367928",
+  phone2: process.env.NEXT_PUBLIC_PHONE_2 || "09099430320",
+  whatsapp: process.env.NEXT_PUBLIC_WHATSAPP || "2348163367928",
   email: process.env.NEXT_PUBLIC_EMAIL || "info@alabsglobalconcept.com",
   address:
     process.env.NEXT_PUBLIC_ADDRESS ||
-    "Plot 000, Example Street, Maitama, Abuja, FCT",
+    "Sifa Plaza, Sharp Corner, Mararaba, Karu LGA, Nasarawa State",
   hours: process.env.NEXT_PUBLIC_BUSINESS_HOURS || "Mon–Sat, 8am – 6pm",
   socials: {
     instagram: process.env.NEXT_PUBLIC_INSTAGRAM || "#",
@@ -26,9 +27,9 @@ export const siteConfig = {
     { href: "/blog", label: "Blog" },
     { href: "/contact", label: "Contact" },
   ],
-  /** [CONFIRM] — Abuja office geo coordinates (Maitama approx.) */
-  geo: { lat: 9.0876, lng: 7.4951 },
-  /** [CONFIRM_AREAS] — districts served in Abuja */
+  /** Office geo coordinates — Mararaba (Karu LGA) approx. */
+  geo: { lat: 8.5333, lng: 7.65 },
+  /** Districts served in and around Abuja */
   areasServed: [
     "Maitama",
     "Asokoro",

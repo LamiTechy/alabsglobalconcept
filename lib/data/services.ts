@@ -72,7 +72,7 @@ export const SERVICES: ServiceDef[] = [
       "System design with demand and diversity factors",
       "Hybrid inverter & expandable battery banks",
       "Generator auto-transfer integration",
-      "Three-phase options where required [CONFIRM]",
+      "Three-phase options where required",
       "Remote monitoring and SLA-based support plans",
     ],
     systemSizes:
@@ -85,7 +85,7 @@ export const SERVICES: ServiceDef[] = [
       },
       {
         q: "Do you handle three-phase systems?",
-        a: "Yes, including three-phase hybrid inverters and commercial arrays [CONFIRM specs].",
+        a: "Yes, including three-phase hybrid inverters and commercial arrays.",
       },
     ],
   },
@@ -103,7 +103,7 @@ export const SERVICES: ServiceDef[] = [
       "Anyone who wants genuine products with clear warranties",
     ],
     includes: [
-      "Curated Tier-1 panels and inverters [CONFIRM brands]",
+      "Curated Tier-1 panels and inverters",
       "Lithium (LiFePO4) and tubular battery options",
       "MPPT/PWM charge controllers",
       "Complete kits from 1kVA to 20kVA+",
@@ -170,7 +170,7 @@ export const SERVICES: ServiceDef[] = [
     includes: [
       "Site assessment and lighting plan",
       "All-in-one or split solar street lights",
-      "Pole supply & mounting [CONFIRM]",
+      "Pole supply & mounting",
       "Motion-sensor configuration",
       "Community/user training",
     ],

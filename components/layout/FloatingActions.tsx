@@ -1,23 +1,8 @@
 "use client";
 
-import { MessageCircle, Phone } from "lucide-react";
+import { Bot, Phone } from "lucide-react";
 import Link from "next/link";
-import { siteConfig, whatsappLink, DEFAULT_WHATSAPP_MESSAGE } from "@/lib/site";
-
-export function WhatsAppFloat() {
-  return (
-    <Link
-      href={whatsappLink(DEFAULT_WHATSAPP_MESSAGE)}
-      target="_blank"
-      rel="noopener noreferrer"
-      aria-label="Chat with us on WhatsApp"
-      className="fixed bottom-24 right-4 z-40 inline-flex h-14 w-14 items-center justify-center rounded-full bg-energy-500 text-white shadow-card-hover transition hover:scale-105 hover:bg-energy-600 md:bottom-6 md:right-6"
-    >
-      <MessageCircle className="h-6 w-6" aria-hidden />
-      <span className="absolute -top-1 -right-1 h-3.5 w-3.5 animate-pulse rounded-full border-2 border-white bg-sun-400" aria-hidden />
-    </Link>
-  );
-}
+import { siteConfig } from "@/lib/site";
 
 export function MobileBottomBar() {
   return (
@@ -29,15 +14,14 @@ export function MobileBottomBar() {
         <Phone className="h-5 w-5 text-deep-900" aria-hidden />
         Call
       </a>
-      <Link
-        href={whatsappLink(DEFAULT_WHATSAPP_MESSAGE)}
-        target="_blank"
-        rel="noopener noreferrer"
+      <button
+        type="button"
+        onClick={() => window.dispatchEvent(new CustomEvent("open-ai-chat"))}
         className="flex flex-col items-center gap-0.5 border-x border-slate-200 py-2.5 text-[0.68rem] font-semibold text-energy-600"
       >
-        <MessageCircle className="h-5 w-5" aria-hidden />
-        WhatsApp
-      </Link>
+        <Bot className="h-5 w-5" aria-hidden />
+        AI Chat
+      </button>
       <Link
         href="/contact"
         className="flex flex-col items-center gap-0.5 py-2.5 text-[0.68rem] font-semibold text-sun-600"
