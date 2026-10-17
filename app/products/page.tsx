@@ -4,9 +4,9 @@ import { ProductCatalog } from "@/components/products/ProductCatalog";
 import { getProducts, getCategories } from "@/lib/queries";
 
 export const metadata: Metadata = {
-  title: "Solar Products & Equipment — Panels, Inverters, Batteries, Kits",
+  title: "Solar & CCTV Products — Panels, Inverters, Batteries, Cameras",
   description:
-    "Browse genuine solar panels, inverters, lithium & tubular batteries, complete kits, street lights and accessories. Abuja delivery and nationwide shipping.",
+    "Browse genuine solar panels, inverters, lithium & tubular batteries, complete kits, street lights, CCTV cameras and accessories. Abuja delivery and nationwide shipping.",
   alternates: { canonical: "/products" },
 };
 
@@ -17,8 +17,8 @@ export default async function ProductsPage() {
     <>
       <PageHero
         eyebrow="Products"
-        title="Solar equipment catalogue"
-        description="Panels, inverters, batteries, complete kits, street lights and accessories — genuine products with clear warranties. Prices shown where available; otherwise, request a quote."
+        title="Solar & CCTV equipment catalogue"
+        description="Panels, inverters, batteries, complete kits, street lights, CCTV cameras and accessories — genuine products with clear warranties. Prices shown where available; otherwise, request a quote."
         breadcrumbs={[{ label: "Home", href: "/" }, { label: "Products" }]}
       />
       <section className="section-pad bg-surface">

@@ -10,7 +10,7 @@ import { siteConfig, whatsappLink, DEFAULT_WHATSAPP_MESSAGE, buildAbsoluteUrl } 
 export const metadata: Metadata = {
   title: "Contact & Get a Free Quote — Solar Company in Abuja",
   description:
-    "Request a free solar quote in Abuja. Call, WhatsApp or fill our multi-step-friendly form — certified installers, warranty-backed systems, honest pricing.",
+    "Request a free solar or CCTV quote in Abuja. Call, WhatsApp or fill our multi-step-friendly form — certified installers, warranty-backed systems, honest pricing.",
   alternates: { canonical: "/contact" },
 };
 

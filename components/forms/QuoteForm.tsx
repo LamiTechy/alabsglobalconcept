@@ -187,6 +187,7 @@ export function QuoteForm({ source = "quote_form" }: { source?: "quote_form" | "
             <option>Maintenance / repairs</option>
             <option>Solar street lights</option>
             <option>Solar water pumps</option>
+            <option>CCTV supply &amp; installation</option>
             <option>Not sure yet</option>
           </select>
         </div>

@@ -17,6 +17,7 @@ const serviceLinks = [
   { href: "/services/maintenance-repairs", label: "Maintenance & Repairs" },
   { href: "/services/solar-street-lights", label: "Solar Street Lights" },
   { href: "/services/solar-water-pumps", label: "Solar Water Pumps" },
+  { href: "/services/cctv-installation", label: "CCTV Installation" },
 ];
 
 export function Header() {

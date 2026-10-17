@@ -15,6 +15,8 @@ export const IMAGES = {
   whyUs: pexels(9875441, 1200),
   aboutStory: pexels(4254167, 1200),
   serviceSidebar: unsplash("photo-1548337138-e87d889cc369", 800),
+  cctv: pexels(17440970, 1200),
+  cctvSidebar: pexels(3205735, 800),
   team: [
     unsplash("photo-1581092918056-0c4c3acd3789", 600),
     unsplash("photo-1560250097-0b93528c311a", 600),

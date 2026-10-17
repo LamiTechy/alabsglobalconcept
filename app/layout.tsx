@@ -26,11 +26,11 @@ export async function generateMetadata(): Promise<Metadata> {
   return {
     metadataBase: new URL(buildAbsoluteUrl()),
     title: {
-      default: `${siteConfig.name} — Solar Installation & Supply in Abuja`,
+      default: `${siteConfig.name} — Solar Installation & CCTV Supply in Abuja`,
       template: `%s | ${siteConfig.name}`,
     },
     description:
-      "Reliable solar installation and equipment supply in Abuja, FCT. Panels, inverters, lithium & tubular batteries, complete kits. Certified installers, warranty-backed systems, nationwide delivery.",
+      "Reliable solar installation and equipment supply in Abuja, FCT — plus CCTV camera supply and installation. Panels, inverters, lithium & tubular batteries, complete kits. Certified installers, warranty-backed systems, nationwide delivery.",
     keywords: [
       "solar installation Nigeria",
       "solar inverter supplier",
@@ -40,22 +40,24 @@ export async function generateMetadata(): Promise<Metadata> {
       "solar inverter supplier Abuja",
       "solar panels price Abuja",
       "solar installation FCT",
+      "CCTV installation Abuja",
+      "CCTV cameras Nigeria",
     ],
     openGraph: {
       type: "website",
       locale: "en_NG",
       url: buildAbsoluteUrl(),
       siteName: siteConfig.name,
-      title: `${siteConfig.name} — Solar Installation & Supply in Abuja`,
+      title: `${siteConfig.name} — Solar Installation & CCTV Supply in Abuja`,
       description:
-        "Dependable solar power for homes, businesses and institutions across Abuja and Nigeria.",
+        "Dependable solar power and CCTV security systems for homes, businesses and institutions across Abuja and Nigeria.",
       images: [{ url: "/og-default.svg", width: 1200, height: 630, alt: siteConfig.name }],
     },
     twitter: {
       card: "summary_large_image",
-      title: `${siteConfig.name} — Solar Installation & Supply in Abuja`,
+      title: `${siteConfig.name} — Solar Installation & CCTV Supply in Abuja`,
       description:
-        "Dependable solar power for homes, businesses and institutions across Abuja and Nigeria.",
+        "Dependable solar power and CCTV security systems for homes, businesses and institutions across Abuja and Nigeria.",
       images: ["/og-default.svg"],
     },
     robots: { index: true, follow: true },

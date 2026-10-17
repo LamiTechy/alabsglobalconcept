@@ -11,7 +11,7 @@ import { IMAGES } from "@/lib/data/images";
 export const metadata: Metadata = {
   title: "About Us — Solar Company in Abuja, FCT",
   description:
-    "Learn about Alabsglobalconcept — an Abuja-rooted solar installation and equipment supply company serving homes, businesses and institutions across Nigeria.",
+    "Learn about Alabsglobalconcept — an Abuja-rooted solar installation, equipment supply and CCTV installation company serving homes, businesses and institutions across Nigeria.",
   alternates: { canonical: "/about" },
 };
 
@@ -44,7 +44,7 @@ export default function AboutPage() {
       <PageHero
         eyebrow="About us"
         title="Abuja-rooted. Nigeria-ready."
-        description="Alabsglobalconcept was built for one reason: to make dependable solar power accessible to homes and businesses tired of unreliable grid supply and rising fuel costs."
+        description="Alabsglobalconcept was built for one reason: to make dependable solar power and property security accessible to homes and businesses tired of unreliable grid supply and rising fuel costs."
         breadcrumbs={[{ label: "Home", href: "/" }, { label: "About" }]}
       />
 
@@ -70,7 +70,8 @@ export default function AboutPage() {
               <p>
                 From our base in Abuja (FCT), we design, supply and install solar power systems for
                 residential homes, commercial offices, clinics, schools, estates, farms and places of
-                worship — with nationwide equipment delivery for clients beyond the FCT.
+                worship — plus CCTV camera supply and installation — with nationwide equipment
+                delivery for clients beyond the FCT.
               </p>
               <p>
                 <strong className="text-deep-900">Our promise is simple:</strong> honest advice, genuine
@@ -92,12 +93,12 @@ export default function AboutPage() {
             {
               icon: Target,
               title: "Our mission",
-              text: "To deliver reliable, affordable and long-lasting solar power solutions — engineered for Nigerian conditions and backed by genuine after-sales support.",
+              text: "To deliver reliable, affordable and long-lasting solar power and security solutions — engineered for Nigerian conditions and backed by genuine after-sales support.",
             },
             {
               icon: Eye,
               title: "Our vision",
-              text: "A Nigeria where homes and businesses run on clean, silent power without fear of outages or fuel price shocks.",
+              text: "A Nigeria where homes and businesses run on clean, silent power and feel secure — without fear of outages, fuel price shocks or break-ins.",
             },
           ].map(({ icon: Icon, title, text }, i) => (
             <Reveal key={title} delay={i * 0.08}>

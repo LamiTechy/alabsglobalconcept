@@ -214,6 +214,41 @@ export const SERVICES: ServiceDef[] = [
       },
     ],
   },
+  {
+    slug: "cctv-installation",
+    name: "CCTV Supply & Installation",
+    shortName: "CCTV Installation",
+    tagline: "Keep an eye on your home, shop or site — from anywhere.",
+    overview:
+      "We supply and install CCTV camera systems for homes, shops, offices and facilities across Abuja and Nigeria. From a single front-door camera to multi-camera setups with phone viewing, we size the system to your site, run clean cabling, configure recording properly and train you on daily use — so you get footage when it matters, not just cameras on the wall.",
+    whoFor: [
+      "Homeowners and estates wanting visible deterrence",
+      "Shops, supermarkets and warehouses",
+      "Offices and business premises",
+      "Farms, factories and perimeters",
+    ],
+    includes: [
+      "Free site assessment and camera placement plan",
+      "HD/IP cameras matched to location and lighting",
+      "NVR/DVR supply with storage sized to your retention needs",
+      "Professional cabling, conduit and neat mounting",
+      "Remote viewing setup on your phone (iOS/Android)",
+      "User training and after-sales support",
+    ],
+    systemSizes:
+      "2–16 camera systems as standard; larger projects (estates, warehouses) quoted per site. Options from 2MP–8MP cameras with 1–8TB storage depending on how long you want footage kept.",
+    process: ["Site survey", "Camera design & quote", "Supply & installation", "Training & support"],
+    faqs: [
+      {
+        q: "Can I watch the cameras from my phone?",
+        a: "Yes — we configure remote viewing on your phone so you can check live feeds and playback from anywhere.",
+      },
+      {
+        q: "How long is footage kept?",
+        a: "It depends on camera count, storage size and frame rate — typically 14–30 days with the drives we supply. We size storage to your needs.",
+      },
+    ],
+  },
 ];
 
 export function getService(slug: string) {

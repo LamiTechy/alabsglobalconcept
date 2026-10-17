@@ -135,7 +135,7 @@ export default async function ServiceDetailPage({ params }: Props) {
               </div>
               <div className="mt-6 border-t border-slate-100 pt-5">
                 <SmartImage
-                  src={IMAGES.serviceSidebar}
+                  src={service.slug === "cctv-installation" ? IMAGES.cctvSidebar : IMAGES.serviceSidebar}
                   alt={`${service.shortName} installation by Alabsglobalconcept`}
                   ratio="aspect-[4/3]"
                   className="rounded-xl"

@@ -13,6 +13,8 @@ import {
   Wrench,
   Lightbulb,
   Droplets,
+  Cctv,
+  CheckCircle2,
   ClipboardList,
   Ruler,
   HardHat,
@@ -42,9 +44,9 @@ import { formatNaira } from "@/lib/utils";
 import { IMAGES } from "@/lib/data/images";
 
 export const metadata: Metadata = {
-  title: "Solar Installation & Supply in Abuja | Reliable Power for Homes & Businesses",
+  title: "Solar Installation & CCTV Supply in Abuja | Power & Security for Homes & Businesses",
   description:
-    "Alabsglobalconcept is a solar installation and equipment supply company in Abuja, FCT. Panels, inverters, batteries, complete kits — certified installers, warranty-backed systems, nationwide delivery.",
+    "Alabsglobalconcept is a solar installation, equipment supply and CCTV company in Abuja, FCT. Panels, inverters, batteries, complete kits and CCTV cameras — certified installers, warranty-backed systems, nationwide delivery.",
   alternates: { canonical: "/" },
 };
 
@@ -57,10 +59,10 @@ export default async function HomePage() {
     getFaqs(),
   ]);
 
-  const headline = settings.heroHeadline || "Cut Fuel Costs. Keep the Lights On.";
+  const headline = settings.heroHeadline || "Cut Fuel Costs. Keep the Lights On. Stay Secure.";
   const subheadline =
     settings.heroSubheadline ||
-    "Abuja's trusted solar installation and equipment supply company.";
+    "Abuja's trusted solar installation, equipment supply and CCTV company.";
   const stats = [
     { label: "Projects Completed", value: settings.statProjects ?? 120, suffix: "+" },
     { label: "Happy Clients", value: settings.statClients ?? 95, suffix: "+" },
@@ -68,7 +70,7 @@ export default async function HomePage() {
     { label: "Years of Experience", value: settings.statYears ?? 6, suffix: "" },
   ];
 
-  const serviceIcons = [HomeIcon, Building2, Package, Wrench, Lightbulb, Droplets];
+  const serviceIcons = [HomeIcon, Building2, Package, Wrench, Lightbulb, Droplets, Cctv];
 
   const homeFaqs = faqs.slice(0, 6).map((f) => ({ question: f.question, answer: f.answer }));
 
@@ -91,8 +93,8 @@ export default async function HomePage() {
           <div className="max-w-2xl">
             <Reveal>
               <p className="eyebrow-dark">
-                <Sun className="h-3.5 w-3.5" aria-hidden />
-                Solar Company in Abuja, FCT
+                <Cctv className="h-3.5 w-3.5" aria-hidden />
+                Solar &amp; CCTV Company in Abuja, FCT
               </p>
             </Reveal>
             <Reveal delay={0.08}>
@@ -171,8 +173,8 @@ export default async function HomePage() {
         <div className="container-page">
           <SectionHeading
             eyebrow="What we do"
-            title="Solar services built for Nigerian realities"
-            description="From compact home kits to commercial installations and street lighting — we handle design, supply, installation and support end to end."
+            title="Solar & security services built for Nigerian realities"
+            description="From compact home kits to commercial installations, street lighting and CCTV systems — we handle design, supply, installation and support end to end."
           />
           <div className="mt-12 grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
             {SERVICES.map((service, i) => {
@@ -321,7 +323,7 @@ export default async function HomePage() {
           <SectionHeading
             eyebrow="Our process"
             title="How it works"
-            description="A clear, four-step path from first conversation to silent, reliable power."
+            description="A clear, four-step path from first conversation to silent, reliable power — or a fully fitted CCTV system."
           />
           <ol className="relative mt-14 grid gap-8 md:grid-cols-4">
             <div className="absolute left-0 right-0 top-7 hidden h-0.5 bg-gradient-to-r from-sun-200 via-sun-400 to-energy-300 md:block" aria-hidden />
@@ -412,6 +414,58 @@ export default async function HomePage() {
         </div>
       </section>
 
+      {/* -------------------------------------------------------- CCTV SPOTLIGHT */}
+      <section className="section-pad bg-white">
+        <div className="container-page grid items-center gap-12 lg:grid-cols-2">
+          <Reveal>
+            <div className="relative">
+              <SmartImage
+                src={IMAGES.cctv}
+                alt="CCTV security cameras installed on a wall by Alabsglobalconcept"
+                ratio="aspect-[4/3]"
+                className="rounded-3xl"
+              />
+              <div className="absolute -bottom-5 -right-5 hidden rounded-2xl border border-slate-200 bg-white p-4 shadow-card-hover sm:block">
+                <p className="text-xs font-medium uppercase tracking-wider text-muted">Remote viewing</p>
+                <p className="mt-1 font-display text-2xl font-bold text-deep-900">On your phone</p>
+                <p className="text-xs text-muted">Live feeds &amp; playback, anywhere</p>
+              </div>
+            </div>
+          </Reveal>
+          <div>
+            <SectionHeading
+              align="left"
+              eyebrow="Power + security"
+              title="CCTV supply & installation too"
+              description="We don't just keep the lights on — we help you keep an eye on your property. We supply and install CCTV camera systems sized to your site, with phone viewing configured for you."
+            />
+            <ul className="mt-8 grid gap-3 sm:grid-cols-2">
+              {[
+                "Homes, shops, offices & estates",
+                "2–16 camera systems (larger sites quoted)",
+                "Phone viewing set up for you",
+                "Clean cabling, NVR/DVR & storage sizing",
+                "User training & after-sales support",
+                "Free site assessment & camera plan",
+              ].map((item) => (
+                <li key={item} className="flex items-start gap-2.5 text-sm text-muted">
+                  <CheckCircle2 className="mt-0.5 h-4.5 w-4.5 shrink-0 text-sun-500" aria-hidden />
+                  {item}
+                </li>
+              ))}
+            </ul>
+            <div className="mt-8 flex flex-col gap-3 sm:flex-row">
+              <ButtonLink href="/services/cctv-installation">
+                Explore CCTV installation <ArrowRight className="h-4 w-4" aria-hidden />
+              </ButtonLink>
+              <ButtonLink href="/contact" variant="outline">
+                Get a CCTV quote
+              </ButtonLink>
+            </div>
+          </div>
+        </div>
+      </section>
+
       {/* --------------------------------------------------- FEATURED PROJECTS */}
       <section className="section-pad bg-deep-950 text-white">
         <div className="container-page">
@@ -479,7 +533,7 @@ export default async function HomePage() {
           <SectionHeading
             eyebrow="FAQ"
             title="Questions people ask us"
-            description="Straight answers about sizing, batteries, warranties and getting started."
+            description="Straight answers about sizing, batteries, warranties, CCTV and getting started."
           />
           <div className="mt-12">
             <FAQAccordion items={homeFaqs} />
@@ -503,7 +557,8 @@ export default async function HomePage() {
               Ready for power that doesn&apos;t blink when AEDC does?
             </h2>
             <p className="mt-3 text-deep-900/80">
-              Get a free, itemised quote — or size your system in 2 minutes with our solar calculator.
+              Get a free, itemised quote for solar or CCTV — or size your solar system in 2 minutes
+              with our calculator.
             </p>
           </div>
           <div className="flex flex-col gap-3 sm:flex-row">

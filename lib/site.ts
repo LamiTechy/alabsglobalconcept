@@ -2,7 +2,7 @@ export const siteConfig = {
   name: "Alabsglobalconcept",
   tagline: "Solar Installation & Supply in Abuja",
   description:
-    "Alabsglobalconcept designs, supplies and installs dependable solar power systems for homes, businesses and institutions across Abuja, FCT and Nigeria.",
+    "Alabsglobalconcept designs, supplies and installs dependable solar power systems and CCTV camera systems for homes, businesses and institutions across Abuja, FCT and Nigeria.",
   phone: process.env.NEXT_PUBLIC_PHONE || "+234XXXXXXXXXX",
   whatsapp: process.env.NEXT_PUBLIC_WHATSAPP || "234XXXXXXXXXX",
   email: process.env.NEXT_PUBLIC_EMAIL || "info@alabsglobalconcept.com",
@@ -60,4 +60,4 @@ export function whatsappLink(message: string) {
 }
 
 export const DEFAULT_WHATSAPP_MESSAGE =
-  "Hello Alabsglobalconcept! I'd like a free solar quote for my home/business in Abuja.";
+  "Hello Alabsglobalconcept! I'd like a free solar or CCTV quote for my home or business in Abuja.";

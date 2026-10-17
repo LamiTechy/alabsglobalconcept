@@ -55,6 +55,7 @@ export const seedCategories: Array<{
   { name: "Solar Street Lights", slug: "solar-street-lights", description: "All-in-one and split solar street lighting for estates, roads and facilities.", order: 5 },
   { name: "Accessories", slug: "accessories", description: "Cables, breakers, mounting structures, surge protection and more.", order: 6 },
   { name: "Charge Controllers", slug: "charge-controllers", description: "MPPT and PWM charge controllers to protect your battery bank.", order: 7 },
+  { name: "CCTV Cameras", slug: "cctv-cameras", description: "CCTV cameras, NVR/DVR recorders and accessories for homes, shops and offices.", order: 8 },
 ];
 
 export const seedProducts: SeedProduct[] = [
@@ -102,6 +103,7 @@ export const seedFaqs = [
   { question: "Do you deliver outside Abuja?", answer: "Yes. We're headquartered in Abuja (FCT) and regularly install across Abuja and its satellite towns — Gwarinpa, Kubwa, Lugbe, Nyanya, Life Camp, Katampe and more. We also supply and ship equipment nationwide across Nigeria. Installation outside FCT can be arranged [CONFIRM travel terms].", category: "delivery", order: 9 },
   { question: "What happens on cloudy or rainy days?", answer: "Solar panels still produce power on cloudy days — just at reduced output. Systems are designed with battery storage and appropriate panel headroom so you ride through low-sun days. For extended harmattan or rainy spells, a generator link (auto-transfer) can top up batteries. We size for Abuja's real climate, not brochure sunshine.", category: "sizing", order: 10 },
   { question: "How do I get a site survey?", answer: "Easy — request a free quote via the Contact page, call us, or message us on WhatsApp. We'll schedule a visit to inspect your roof orientation, shading, load requirements and recommend the right system. Surveys within Abuja metro are typically scheduled within a few days [CONFIRM].", category: "process", order: 11 },
+  { question: "Do you also supply and install CCTV cameras?", answer: "Yes — we supply and install CCTV camera systems for homes, shops, offices and estates, from single front-door cameras to multi-camera systems with phone viewing. Mention CCTV when you request a quote or message us on WhatsApp and we'll design a system for your site.", category: "cctv", order: 0 },
 ];
 
 export const seedBlogPosts: Array<{
@@ -242,12 +244,12 @@ Request a free quote and tell us your monthly power spend — we'll model a syst
 
 export const seedSettings = {
   id: "singleton",
-  announcementText: "Free site survey for solar installations in Abuja this month — limited slots.",
+  announcementText: "Free site survey for solar and CCTV installations in Abuja this month — limited slots.",
   announcementLink: "/contact",
   announcementEnabled: true,
-  heroHeadline: "Cut Fuel Costs. Keep the Lights On.",
+  heroHeadline: "Cut Fuel Costs. Keep the Lights On. Stay Secure.",
   heroSubheadline:
-    "Abuja's trusted solar installation and equipment supply company. Quality panels, inverters and batteries — expertly installed, warranty-backed, and supported after the job is done.",
+    "Abuja's trusted solar installation, equipment supply and CCTV company. Quality panels, inverters, batteries and cameras — expertly installed, warranty-backed, and supported after the job is done.",
   statProjects: 120,
   statClients: 95,
   statKwInstalled: 350,

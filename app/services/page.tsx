@@ -7,9 +7,9 @@ import { ButtonLink } from "@/components/ui/Button";
 import { SERVICES } from "@/lib/data/services";
 
 export const metadata: Metadata = {
-  title: "Solar Services in Abuja — Installation, Supply, Maintenance",
+  title: "Solar & Security Services in Abuja — Installation, Supply, Maintenance",
   description:
-    "Residential and commercial solar installation, equipment supply, maintenance & repairs, solar street lights and solar water pumps — serving Abuja, FCT and Nigeria.",
+    "Residential and commercial solar installation, equipment supply, maintenance & repairs, solar street lights, solar water pumps and CCTV installation — serving Abuja, FCT and Nigeria.",
   alternates: { canonical: "/services" },
 };
 
@@ -18,8 +18,8 @@ export default function ServicesPage() {
     <>
       <PageHero
         eyebrow="Services"
-        title="End-to-end solar services"
-        description="One team for design, supply, installation and support — whether you need a home backup system or a commercial power upgrade."
+        title="End-to-end solar & security services"
+        description="One team for design, supply, installation and support — whether you need a home backup system, a commercial power upgrade or a CCTV setup."
         breadcrumbs={[{ label: "Home", href: "/" }, { label: "Services" }]}
       />
       <section className="section-pad bg-surface">

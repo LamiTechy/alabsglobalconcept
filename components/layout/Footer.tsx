@@ -12,9 +12,9 @@ export function Footer() {
         <div className="lg:col-span-4">
           <Logo dark />
           <p className="mt-5 max-w-sm text-sm leading-relaxed">
-            Alabsglobalconcept designs, supplies and installs dependable solar power systems for homes,
-            businesses and institutions across Abuja, FCT and Nigeria. Quality equipment, expert
-            installation, honest after-sales support.
+            Alabsglobalconcept designs, supplies and installs dependable solar power systems and CCTV
+            cameras for homes, businesses and institutions across Abuja, FCT and Nigeria. Quality
+            equipment, expert installation, honest after-sales support.
           </p>
           <div className="mt-6 flex gap-3">
             {[
@@ -60,6 +60,7 @@ export function Footer() {
               ["Maintenance & Repairs", "/services/maintenance-repairs"],
               ["Solar Street Lights", "/services/solar-street-lights"],
               ["Solar Water Pumps", "/services/solar-water-pumps"],
+              ["CCTV Installation", "/services/cctv-installation"],
             ].map(([label, href]) => (
               <li key={href}>
                 <Link href={href} className="transition hover:text-sun-300">
