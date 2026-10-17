@@ -1,0 +1,108 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  /* Brand tokens */
+  --brand-sun: 245 166 35; /* #F5A623 */
+  --brand-deep: 11 31 58; /* #0B1F3A */
+  --brand-green: 31 164 99; /* #1FA463 */
+  --surface: 247 249 251; /* #F7F9FB */
+  --surface-dark: 10 22 38; /* #0A1626 */
+  --foreground: 17 24 39;
+  --muted-foreground: 90 102 120;
+  --border: 219 226 234;
+  /* Typography — Sora (display) + Inter (body), system fallbacks */
+  --font-display: "Sora", "Segoe UI", system-ui, -apple-system, sans-serif;
+  --font-body: "Inter", "Segoe UI", system-ui, -apple-system, sans-serif;
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+  html {
+    scroll-behavior: smooth;
+    -webkit-text-size-adjust: 100%;
+  }
+  @media (prefers-reduced-motion: reduce) {
+    html {
+      scroll-behavior: auto;
+    }
+    *,
+    *::before,
+    *::after {
+      animation-duration: 0.01ms !important;
+      animation-iteration-count: 1 !important;
+      transition-duration: 0.01ms !important;
+    }
+  }
+  body {
+    @apply bg-surface text-foreground antialiased;
+    font-family: var(--font-body);
+    text-rendering: optimizeLegibility;
+  }
+  ::selection {
+    @apply bg-sun-400/30 text-deep-900;
+  }
+  :focus-visible {
+    @apply outline-none ring-2 ring-sun-400 ring-offset-2 ring-offset-surface;
+  }
+}
+
+@layer components {
+  .container-page {
+    @apply mx-auto w-full max-w-7xl px-5 sm:px-8;
+  }
+  .section-pad {
+    @apply py-16 md:py-24;
+  }
+  .eyebrow {
+    @apply inline-flex items-center gap-2 rounded-full border border-sun-400/30 bg-sun-400/10 px-3.5 py-1 text-xs font-semibold uppercase tracking-[0.14em] text-sun-600;
+  }
+  .eyebrow-dark {
+    @apply inline-flex items-center gap-2 rounded-full border border-sun-400/30 bg-sun-400/10 px-3.5 py-1 text-xs font-semibold uppercase tracking-[0.14em] text-sun-300;
+  }
+  .heading-display {
+    @apply font-display font-bold tracking-tight text-deep-900;
+  }
+  .heading-display-dark {
+    @apply font-display font-bold tracking-tight text-white;
+  }
+  .text-muted {
+    color: rgb(var(--muted-foreground));
+  }
+  .card {
+    @apply rounded-2xl border border-slate-200/80 bg-white shadow-soft transition-all duration-300;
+  }
+  .card-hover {
+    @apply hover:-translate-y-1 hover:border-sun-300 hover:shadow-card-hover;
+  }
+  .pattern-grid {
+    background-image: linear-gradient(rgb(11 31 58 / 0.05) 1px, transparent 1px),
+      linear-gradient(90deg, rgb(11 31 58 / 0.05) 1px, transparent 1px);
+    background-size: 42px 42px;
+  }
+  .pattern-grid-dark {
+    background-image: linear-gradient(rgb(255 255 255 / 0.05) 1px, transparent 1px),
+      linear-gradient(90deg, rgb(255 255 255 / 0.05) 1px, transparent 1px);
+    background-size: 42px 42px;
+  }
+  .sun-glow {
+    background: radial-gradient(circle at 80% 20%, rgb(245 166 35 / 0.22), transparent 42%),
+      radial-gradient(circle at 10% 90%, rgb(31 164 99 / 0.12), transparent 38%);
+  }
+}
+
+@layer utilities {
+  .sr-only-focusable:not(:focus):not(:focus-within) {
+    @apply sr-only;
+  }
+  .no-scrollbar::-webkit-scrollbar {
+    display: none;
+  }
+  .no-scrollbar {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+  }
+}
